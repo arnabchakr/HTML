@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment and decrement</title>
+    <style>
+        h1{
+            font-size: large;color: #22d436;text-align: center;background-color: rgb(30, 29, 29);
+        }
+        body{
+            font-size: large;color: #ced422;text-align: center;background-color: rgb(30, 29, 29);
+        }
+    </style>
+</head>
+<body>
+    <h1>Increment/Decerment</h1>
+    <button id="add" onclick="add()">+</button>
+    <span id="num">0</span>
+    <button id="sub" onclick="sub()">-</button>
+</body>
+<script>
+    function add(){
+        let num=parseInt(document.querySelector("#num").innerHTML)
+    //console.log(typeof num,num)
+    num++
+    document.querySelector("#num").innerHTML=num
+    }
+    function sub(){
+        let num=parseInt(document.querySelector("#num").innerHTML)
+    //console.log(typeof num,num)
+    num--
+    document.querySelector("#num").innerHTML=num
+    }
+
+</script>
+</html>
