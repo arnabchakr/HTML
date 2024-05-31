@@ -22,14 +22,13 @@
 <script>
     function add(){
         let num=parseInt(document.querySelector("#num").innerHTML)
-    //console.log(typeof num,num)
-    num++
+    num=num+1
     document.querySelector("#num").innerHTML=num
     }
     function sub(){
         let num=parseInt(document.querySelector("#num").innerHTML)
-    //console.log(typeof num,num)
-    num--
+    if(num>0)
+    num=num-1
     document.querySelector("#num").innerHTML=num
     }
 
